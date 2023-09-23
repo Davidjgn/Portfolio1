@@ -6,14 +6,10 @@ body{
 .container{
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
-    overflow: hidden;
+    background-image: url(./images/starsBG1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
 }
-.container img{
-  position:absolute;
-  z-index: -1;
-  height: 1080px;
-}
-
 
 @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {
@@ -25,7 +21,6 @@ body{
     }
 }
 
-/*@media screen and (max-width: 600px) {*/
     .topnav.responsive {
       position: relative;
     }
@@ -40,13 +35,11 @@ body{
       display: block;
       text-align: left;
     }
-/*}*/
 
-/* Add a black background color to the top navigation */
 .topnav {
     background-color: black;
-    /*height: 48px;*/
     overflow: hidden;
+    border-bottom: #f0b104 1px solid;
   }
   
   /* Style the links inside the navigation bar */
@@ -62,7 +55,6 @@ body{
     font-size: 17px;
 }
   
-  /* Change the color of links on hover */
 .topnav a:hover {
     background-color: #ddd;
     color: black;
@@ -78,55 +70,144 @@ body{
 .topnav .icon {
     display: none;
 }
-/*.logo{
-  margin: 2% auto 0 auto;
-  width: 350px;
-  height: 430px;
-  border-radius: 40px;
-  overflow: hidden;
-}*/
-.logo img{
-  position: relative;
-  right: 70px;
+.quote-container{
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5));
+  & .quote{
+    padding-top: 4%;
+    margin: 0 auto;
+    width: 80%;
+    height: 100vh;
+    color: white;
+    & span{
+      position: relative;
+      top: 15%;
+      font-size: 35px;
+      text-shadow: 6px 6px 5px black;
+    }
+  }
 }
-.grid-container{
-  display: grid;
+
+.intro{
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .80), black);
+  color: white;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+.intro-title{
+  padding: 100px 0;
+  font-size: 40px;
+}
+.intro-title img{
+  border: #f0b104 1px solid;
+  border-radius: 20px;
+  outline: #f0b104 1px solid;
+  outline-offset: 8px;
+  border-radius: 8px;
+}
+.intro-title span{
+  border-bottom: #f0b104 1px solid;
+}
+.intro p{
+  font-size: 25px;
+  margin-bottom: 0;
+  width: 80%;
+  margin: auto;
+  padding: 30px;
+}
+.summary{
+  background-color: black;
+  color: white;
+  text-align: center;
+  border: 1px solid black;
+}
+.summary p{
+  font-size: 25px;
+  padding: 30px;
+  margin: 0;
+  border: #f0b104 1px solid;
+  border-bottom: #f0b104 1px solid;
+}
+.summary a{
+  color: #f0b104;
+  text-decoration: none;
+  width: 110px;
+}
+.summary a:hover{
+  text-decoration: underline;
+}
+
+.summary h3{
+  width: 130px;
+  margin: 0;
+  padding-left: 60px;
+  padding-bottom: 30px;
+  text-align: left;
+}
+.summary ul{
+  text-align: left;
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin: 20px 5%;
+  & li{
+    padding-top: 10px;
+  }
+}
+
+.flex-container{
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
   gap: 10px;
   padding: 10px;
-  margin: 2% 10%;
+  margin: 0 auto;
+  justify-content: center;
+  & .gi-1{
+    width: 340px;
+    height: 260px;
+    overflow: hidden;
+  }
+  & .gi-2{
+    width: 340px;
+    & p{
+      padding: 10px;
+    }
+  }
 }
-
-.grid-container div{
-  height: 300px;
-  width: 100%;
+.learnBTN{
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+  width: 130px;
+  height: 40px;
   border-radius: 20px;
+  border: #f0b104 1px solid;
+  & span{
+    width: 150px;
+  }
 }
-.item1{
-  overflow: hidden;
-}
-
-.item1 img{
-  position: relative;
-  right: 190px;
-  bottom: 30px;
-}
-.item2{
-  margin-bottom: 160px;
-}
-.item2 span{
-  font-size: 30px;
-  color: white;
-  width: 200px;
+.learnBTN:hover{
+  background-color: #f0b104;
+  color: black;
 }
 
 .footer{
-  height: 180px;
   width: 100%;
   background-color: rgb(26, 26, 26);
   position: relative;
   color: rgb(126, 126, 126);
   font-size: 25px;
   text-align: center;
+  border-top: 1px #f0b104 solid;
+  & .links{
+    margin-bottom: 0;
+    padding-bottom: 25px;
+  }
+}
+.footer h4{
+  margin-top: 0;
+  padding-top: 20px;
 }
 .footer a{
   text-decoration: none;

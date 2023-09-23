@@ -1,0 +1,105 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {
+      display: none;
+    }
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+}
+
+    .topnav.responsive {
+      position: relative;
+    }
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+      color: black;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+
+.topnav {
+    background-color: black;
+    overflow: hidden;
+    border-bottom: #f0b104 1px solid;
+  }
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 16px;
+    margin: 8px 6px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+  
+  /* Add an active class to highlight the current page */
+.topnav a.active {
+    background-color: #f0b104;
+    color: rgb(0, 0, 0);
+}
+  
+  /* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+.learnBTN{
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+    width: 130px;
+    height: 40px;
+    border-radius: 20px;
+    border: #f0b104 1px solid;
+    & span{
+      width: 150px;
+    }
+  }
+  .learnBTN:hover{
+    background-color: #f0b104;
+    color: black;
+  }
+  
+  .footer{
+    width: 100%;
+    background-color: rgb(26, 26, 26);
+    position: relative;
+    color: rgb(126, 126, 126);
+    font-size: 25px;
+    text-align: center;
+    border-top: 1px #f0b104 solid;
+    & .links{
+      margin-bottom: 0;
+      padding-bottom: 25px;
+    }
+  }
+  .footer h4{
+    margin-top: 0;
+    padding-top: 20px;
+  }
+  .footer a{
+    text-decoration: none;
+    color: white;
+  }
