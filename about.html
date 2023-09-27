@@ -18,33 +18,66 @@
                 x.className = "topnav";
             }
         }
+        window.addEventListener('DOMContentLoaded', () => {
+            let scrollToTopButton = document.getElementById('scrollTop');
+
+            // Add a scroll event listener to show/hide the button
+            
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    scrollToTopButton.style.display = 'block';
+                } else {
+                    scrollToTopButton.style.display = 'none';
+                }
+            });
+        });
     </script> 
 
 </head>
 <body>
+    <a href="javascript:void(0);" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" id="scrollTop" class="scrollBTN">
+        <div >
+            <i class="fa-solid fa-arrow-up"></i>
+        </div>
+    </a>
     <div class="container">
         <section>
             <div class="topnav" id="myTopnav">
-                <a href="./about.html" class="active">About</a>
                 <a href="./index.html" >Home</a>
                 <a href="./browse.html">Browse</a>
+                <a href="./about.html" class="active">About</a>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                     <i class="fa-solid fa-bars"></i>
                 </a>
             </div>
         </section>
         <section>
-            <div class="ceres-container">
+            <div class="content">
+                <div class="content-text">
+                    <h3 class="item1">About Exo-Mining Conglomerate</h3>
+                    <p class="item2">Welcome to Exo-Mining Conglomerate, where the limitless potential of space meets the boundless spirit of exploration. We are a pioneering force in the realm of extraterrestrial resource extraction, driven by a vision to harness the vast resources of our solar system and beyond for the benefit of humanity.</p>
+                    
+                    <h3 class="item3">Our Mission</h3>
+                    <p class="item4">At Exo-Mining Conglomerate, our mission is clear: to unlock the wealth of the cosmos and bring it back to Earth for the betterment of our planet and its inhabitants. We believe that the key to a sustainable future lies in the infinite resources that space has to offer. By responsibly sourcing and extracting valuable minerals and materials from celestial bodies, we aim to contribute to a more prosperous, technologically advanced, and environmentally conscious world.</p>
+                    
+                    <h3 class="item5">Innovation at the Heart</h3>
+                    <p class="item6">Innovation is the heartbeat of our company. We push the boundaries of what is possible, developing cutting-edge technologies and pioneering new techniques in space exploration and resource extraction. Our team of brilliant scientists, engineers, and visionaries is dedicated to solving the complex challenges of mining in the extreme conditions of outer space.</p>
 
-            </div>
-            <div class="phobos-container">
-
-            </div>
-            <div class="moon-container">
-
-            </div>
-            <div class="mars-container">
-
+                    <h3 class="item7">Responsible Resource Management</h3>
+                    <p class="item8">While we reach for the stars, we remain firmly grounded in our commitment to ethical and sustainable resource management. Our operations are guided by a steadfast commitment to environmental preservation and responsible use of celestial bodies. We work closely with international bodies and adhere to all applicable laws and regulations, ensuring that our endeavors contribute to the common good.</p>
+                    
+                    <h3 class="item9">A Legacy of Achievement</h3>
+                    <p class="item10">Exo-Mining Conglomerate has a storied history of achievement in space exploration and resource extraction. Our portfolio includes successful missions to mine asteroids, harvest lunar resources, and prospect for valuable minerals on other celestial bodies. With each mission, we bring home a wealth of knowledge and experience, paving the way for future generations of space miners.</p>
+                    
+                    <h3 class="item11">Global Collaboration</h3>
+                    <p class="item12">We understand that space is a shared frontier, and our commitment to collaboration is unwavering. Exo-Mining Conglomerate actively seeks partnerships with governments, space agencies, research institutions, and private enterprises to advance our shared goals of sustainable space resource utilization. Together, we can forge a brighter future for all of humanity.</p>
+                    
+                    <h3 class="item13">Join Us on Our Journey</h3>
+                    <p class="item14">
+                        At Exo-Mining Conglomerate, we invite you to join us on this epic journey of discovery and innovation. Whether you are a scientist, engineer, explorer, investor, or simply an enthusiast of the cosmos, there is a place for you in our mission to unlock the untapped treasures of the universe.
+                        Together, we will redefine the possibilities of resource acquisition and usher in a new era of sustainability, prosperity, and wonder. Welcome to Exo-Mining Conglomerate, where the stars are not the limit—they are just the beginning.
+                    </p>
+                </div>
             </div>
         </section>
         <footer>

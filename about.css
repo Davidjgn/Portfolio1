@@ -1,3 +1,6 @@
+:root{
+  --main-color: #f0b104;
+}
 body{
     margin: 0;
     padding: 0;
@@ -5,6 +8,23 @@ body{
 .container{
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
+}
+.scrollBTN{
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: var(--main-color);
+  z-index: 1;
+  text-align: center;
+  color: black;
+  display: none;
+  & i{
+    margin-top: 11px;
+    font-size: 28px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -35,7 +55,7 @@ body{
 .topnav {
     background-color: black;
     overflow: hidden;
-    border-bottom: #f0b104 1px solid;
+    border-bottom: var(--main-color) 1px solid;
   }
   .topnav a {
     float: left;
@@ -56,7 +76,7 @@ body{
   
   /* Add an active class to highlight the current page */
 .topnav a.active {
-    background-color: #f0b104;
+    background-color: var(--main-color);
     color: rgb(0, 0, 0);
 }
   
@@ -65,22 +85,124 @@ body{
     display: none;
 }
 
-.learnBTN{
-    text-align: center;
-    vertical-align: middle;
-    display: table-cell;
-    width: 130px;
-    height: 40px;
-    border-radius: 20px;
-    border: #f0b104 1px solid;
-    & span{
-      width: 150px;
-    }
+.content{
+  color: white;
+  background-color: black;
+
+  & .content-text{
+    margin: 0 auto;
+    padding: 5% 1%;
+    width: 80%;
+    border-left: var(--main-color) 1px solid;/**/
   }
-  .learnBTN:hover{
-    background-color: #f0b104;
-    color: black;
+}
+
+@keyframes format {
+  0%{
+    left: 100px;
+    opacity: 0;
   }
+  100%{
+    left: 0px;
+    opacity: 1;
+  }
+}
+.item1{
+  animation-name: format;
+  animation-duration: 1s;
+  position: relative;
+}
+.item2{
+  animation-name: format;
+  animation-duration: 1s;
+  position: relative;
+  animation-delay: 50ms;
+  animation-fill-mode: both;
+}
+.item3{
+  animation-name: format;
+  animation-duration: 1s;
+  position: relative;
+  animation-delay: 100ms;
+  animation-fill-mode: both;
+}
+.item4{
+  animation-name: format;
+  animation-duration: 1s;
+  position: relative;
+  animation-delay: 150ms;
+  animation-fill-mode: both;
+}
+.item5{
+  animation-name: format;
+  animation-duration: 1s;
+  position: relative;
+  animation-delay: 200ms;
+  animation-fill-mode: both;
+}
+.item6{
+  animation-name: format;
+  animation-duration: 1s;
+  position: relative;
+  animation-delay: 250ms;
+  animation-fill-mode: both;
+}
+.item7{
+  animation-name: format;
+  animation-duration: 1s;
+  position: relative;
+  animation-delay: 300ms;
+  animation-fill-mode: both;
+}
+.item8{
+  animation-name: format;
+  animation-duration: 1s;
+  position: relative;
+  animation-delay: 350ms;
+  animation-fill-mode: both;
+}
+.item9{
+  animation-name: format;
+  animation-duration: 1s;
+  position: relative;
+  animation-delay: 400ms;
+  animation-fill-mode: both;
+}
+.item10{
+  animation-name: format;
+  animation-duration: 1s;
+  position: relative;
+  animation-delay: 450ms;
+  animation-fill-mode: both;
+}
+.item11{
+  animation-name: format;
+  animation-duration: 1s;
+  position: relative;
+  animation-delay: 500ms;
+  animation-fill-mode: both;
+}
+.item12{
+  animation-name: format;
+  animation-duration: 1s;
+  position: relative;
+  animation-delay: 550ms;
+  animation-fill-mode: both;
+}
+.item13{
+  animation-name: format;
+  animation-duration: 1s;
+  position: relative;
+  animation-delay: 600ms;
+  animation-fill-mode: both;
+}
+.item14{
+  animation-name: format;
+  animation-duration: 1s;
+  position: relative;
+  animation-delay: 650ms;
+  animation-fill-mode: both;
+}
   
   .footer{
     width: 100%;
@@ -89,7 +211,7 @@ body{
     color: rgb(126, 126, 126);
     font-size: 25px;
     text-align: center;
-    border-top: 1px #f0b104 solid;
+    border-top: 1px var(--main-color) solid;
     & .links{
       margin-bottom: 0;
       padding-bottom: 25px;

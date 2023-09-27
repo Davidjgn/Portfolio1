@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Placeholder</title>
+    <title>Exo-Mining Conglomerate</title>
 
     <link rel="stylesheet" href="./main.css">
 
@@ -18,11 +18,30 @@
                 x.className = "topnav";
             }
         }
+        window.addEventListener('DOMContentLoaded', () => {
+            let scrollToTopButton = document.getElementById('scrollTop');
+
+            // Add a scroll event listener to show/hide the button
+            
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    scrollToTopButton.style.display = 'block';
+                } else {
+                    scrollToTopButton.style.display = 'none';
+                }
+            });
+        });
+        
     </script> 
 </head>
 <body>
+    <a href="javascript:void(0);" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" id="scrollTop" class="scrollBTN">
+        <div >
+            <i class="fa-solid fa-arrow-up"></i>
+        </div>
+    </a>
     <div class="container">
-        <section>
+        <nav>
             <div class="topnav" id="myTopnav">
                 <a href="./index.html" class="active">Home</a>
                 <a href="./browse.html">Browse</a>
@@ -31,7 +50,7 @@
                     <i class="fa-solid fa-bars"></i>
                 </a>
             </div>
-        </section>
+        </nav>
         <section>
             
             <div class="quote-container">
@@ -45,7 +64,7 @@
             </div>
             <div class="intro">
                 <div class="intro-title">
-                    <img src="./images/logo.png" alt="">
+                    <img src="./images/logo.png" alt="Exo-Mining Conglomerate company logo">
                     <br>
                     <span>
                         Exo-Mining Conglomerate
@@ -60,7 +79,7 @@
             <div class="summary">
                 <div class="flex-container">
                     <div class="gi-1">
-                        <img src="./images/asteroid.jpg" alt="" height="300px">
+                        <img src="./images/asteroid.jpg" alt="image of an asteroid and its moon" height="300px">
                     </div>
                     <div class="gi-2">
                         <p>
@@ -88,19 +107,7 @@
                 </h3>
                 
             </div>
-            <!--
-            <div class="grid-container" id="myGrid">
-                
-                <div class="item1">
-                    
-                    <img src="./images/sunset.jpg" alt="hiker">
-                </div>
-                <div class="item2">
-                    <span>
-                        
-                    </span>
-                </div>
-            </div>-->
+            
         </section>
         <footer>
             <div class="footer">

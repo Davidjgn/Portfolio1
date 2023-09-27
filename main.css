@@ -1,4 +1,6 @@
-
+:root{
+  --main-color: #f0b104;
+}
 body{
     margin: 0;
     padding: 0;
@@ -10,7 +12,23 @@ body{
     background-size: cover;
     background-attachment: fixed;
 }
-
+.scrollBTN{
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: var(--main-color);
+  z-index: 1;
+  text-align: center;
+  color: black;
+  display: none;
+  & i{
+    margin-top: 11px;
+    font-size: 28px;
+  }
+}
 @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {
       display: none;
@@ -39,7 +57,7 @@ body{
 .topnav {
     background-color: black;
     overflow: hidden;
-    border-bottom: #f0b104 1px solid;
+    border-bottom: var(--main-color) 1px solid;
   }
   
   /* Style the links inside the navigation bar */
@@ -62,7 +80,7 @@ body{
   
   /* Add an active class to highlight the current page */
 .topnav a.active {
-    background-color: #f0b104;
+    background-color: var(--main-color);
     color: rgb(0, 0, 0);
 }
   
@@ -100,14 +118,14 @@ body{
   font-size: 40px;
 }
 .intro-title img{
-  border: #f0b104 1px solid;
+  border: var(--main-color) 1px solid;
   border-radius: 20px;
-  outline: #f0b104 1px solid;
+  outline: var(--main-color) 1px solid;
   outline-offset: 8px;
   border-radius: 8px;
 }
 .intro-title span{
-  border-bottom: #f0b104 1px solid;
+  border-bottom: var(--main-color) 1px solid;
 }
 .intro p{
   font-size: 25px;
@@ -126,11 +144,12 @@ body{
   font-size: 25px;
   padding: 30px;
   margin: 0;
-  border: #f0b104 1px solid;
-  border-bottom: #f0b104 1px solid;
+  border: var(--main-color) 1px solid;
+  border-bottom: var(--main-color) 1px solid;
+  border-radius: 5px;
 }
 .summary a{
-  color: #f0b104;
+  color: var(--main-color);
   text-decoration: none;
   width: 110px;
 }
@@ -149,7 +168,8 @@ body{
   text-align: left;
   font-size: 20px;
   letter-spacing: 1px;
-  margin: 20px 5%;
+  margin: 20px auto;
+  max-width: 800px;
   & li{
     padding-top: 10px;
   }
@@ -182,13 +202,13 @@ body{
   width: 130px;
   height: 40px;
   border-radius: 20px;
-  border: #f0b104 1px solid;
+  border: var(--main-color) 1px solid;
   & span{
     width: 150px;
   }
 }
 .learnBTN:hover{
-  background-color: #f0b104;
+  background-color: var(--main-color);
   color: black;
 }
 
@@ -199,7 +219,7 @@ body{
   color: rgb(126, 126, 126);
   font-size: 25px;
   text-align: center;
-  border-top: 1px #f0b104 solid;
+  border-top: 1px var(--main-color) solid;
   & .links{
     margin-bottom: 0;
     padding-bottom: 25px;

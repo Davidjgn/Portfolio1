@@ -3,30 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>Browse</title>
 
     <link rel="stylesheet" href="./browse.css">
 
     <script src="https://kit.fontawesome.com/9e6a36f458.js" crossorigin="anonymous"></script>
 
     <script>
+        //for a responsive nav-bar
         function myFunction() {
-            var x = document.getElementById("myTopnav");
+            let x = document.getElementById("myTopnav");
             if (x.className === "topnav") {
                 x.className += " responsive";
             } else {
                 x.className = "topnav";
             }
         }
+        //waiting for DOM content to load
+        window.addEventListener('DOMContentLoaded', () => {
+            let scrollToTopButton = document.getElementById('scrollTop');
+
+            // Add a scroll event listener to show/hide the button
+            
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    scrollToTopButton.style.display = 'block';
+                } else {
+                    scrollToTopButton.style.display = 'none';
+                }
+            });
+        });
+
+        function Ceres(){
+            let z = document.getElementById("Ceres");
+            if (z.className === "popup-bg") {
+                z.className += " show";
+            } else {
+                z.className = "popup-bg";
+            }
+        }
+        function Phobos(){
+            let z = document.getElementById("Phobos");
+            if (z.className === "popup-bg") {
+                z.className += " show";
+            } else {
+                z.className = "popup-bg";
+            }
+        }
+        function Deimos(){
+            let z = document.getElementById("Deimos");
+            if (z.className === "popup-bg") {
+                z.className += " show";
+            } else {
+                z.className = "popup-bg";
+            }
+        }
+        function Moon(){
+            let z = document.getElementById("Moon");
+            if (z.className === "popup-bg") {
+                z.className += " show";
+            } else {
+                z.className = "popup-bg";
+            }
+        }
+        function Mars(){
+            let z = document.getElementById("Mars");
+            if (z.className === "popup-bg") {
+                z.className += " show";
+            } else {
+                z.className = "popup-bg";
+            }
+        }
+        function Ganymede(){
+            let z = document.getElementById("Ganymede");
+            if (z.className === "popup-bg") {
+                z.className += " show";
+            } else {
+                z.className = "popup-bg";
+            }
+        }
+        function Vesta(){
+            let z = document.getElementById("Vesta");
+            if (z.className === "popup-bg") {
+                z.className += " show";
+            } else {
+                z.className = "popup-bg";
+            }
+        }
+        function Eros(){
+            let z = document.getElementById("Eros");
+            if (z.className === "popup-bg") {
+                z.className += " show";
+            } else {
+                z.className = "popup-bg";
+            }
+        }
+        function Bennu(){
+            let z = document.getElementById("Bennu");
+            if (z.className === "popup-bg") {
+                z.className += " show";
+            } else {
+                z.className = "popup-bg";
+            }
+        }
     </script> 
 
 </head>
 <body>
+    <!-- scroll to top button -->
+    <a href="javascript:void(0);" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" id="scrollTop" class="scrollBTN">
+        <div >
+            <i class="fa-solid fa-arrow-up"></i>
+        </div>
+    </a>
     <div class="container">
-        <section>
+        <section><!-- navigation bar section -->
             <div class="topnav" id="myTopnav">
-                <a href="./browse.html" class="active">Browse</a>
                 <a href="./index.html" >Home</a>
+                <a href="./browse.html" class="active">Browse</a>
                 <a href="./about.html" >About</a>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                     <i class="fa-solid fa-bars"></i>
@@ -34,17 +128,365 @@
             </div>
         </section>
         <section>
-            <div class="ceres-container">
-
+            <div class="content">
+                <div>
+                    <h3>
+                        Our active mining operations:
+                    </h3>
+                </div>
+                <div class="gallery">
+                    <a href="javascript:void(0);" onclick="Ceres()">
+                        <div class="galleryI">
+                            <div>
+                                <span>
+                                    Ceres
+                                </span>
+                            </div>
+                            <div>
+                                <img src="./images/ceres.jpg" alt="Image of Ceres" height="200px">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" onclick="Phobos()">
+                        <div class="galleryI">
+                            <div>
+                                <span>
+                                    Phobos
+                                </span>
+                            </div>
+                            <div>
+                                <img src="./images/phobos.jpg" alt="image of phobos" height="200px">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" onclick="Deimos()">
+                        <div class="galleryI">
+                            <div>
+                                <span>
+                                    Deimos
+                                </span>
+                            </div>
+                            <div>
+                                <img src="./images/deimos.jpg" alt="image of deimos" height="200px">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" onclick="Moon()">
+                        <div class="galleryI">
+                            <div>
+                                <span>
+                                    Moon
+                                </span>
+                            </div>
+                            <div>
+                                <img src="./images/moon.jpg" alt="image of the moon" height="200px">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" onclick="Mars()">
+                        <div class="galleryI">
+                            <div>
+                                <span>
+                                    Mars
+                                </span>
+                            </div>
+                            <div>
+                                <img src="./images/mars.png" alt="image of mars" height="200px">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" onclick="Ganymede()">
+                        <div class="galleryI">
+                            <div>
+                                <span>
+                                    Ganymede
+                                </span>
+                            </div>
+                            <div>
+                                <img src="./images/ganymede.png" alt="image of ganymede" height="200px">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" onclick="Vesta()">
+                        <div class="galleryI">
+                            <div>
+                                <span>
+                                    4 Vesta
+                                </span>
+                            </div>
+                            <div>
+                                <img src="./images/vesta.jpg" alt="image of 4 vesta" height="200px">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" onclick="Eros()">
+                        <div class="galleryI">
+                            <div>
+                                <span>
+                                    433 Eros
+                                </span>
+                            </div>
+                            <div>
+                                <img src="./images/eros.jpg" alt="image of 433 eros" height="200px">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" onclick="Bennu()">
+                        <div class="galleryI">
+                            <div>
+                                <span>
+                                    Bennu
+                                </span>
+                            </div>
+                            <div>
+                                <img src="./images/bennu.jpg" alt="image of bennu" height="200px">
+                            </div>
+                        </div>
+                    </a>
+                </div>
             </div>
-            <div class="phobos-container">
-
+            <div class="popup-bg" id="Ceres">
+                <div class="popup">
+                    <a href="javascript:void(0);" onclick="Ceres()">
+                        <i class="fa-solid fa-x"></i>
+                    </a>
+                    <div class="popup-content">
+                        <img src="./images/ceres.jpg" alt="image of Ceres" class="popupimg">
+                        <p>
+                            <strong>
+                                Ceres
+                            </strong>
+                            <br>
+                            <br>
+                            Radius: 473 km
+                            <br>
+                            Gravity: 0.27 m/s²
+                            <br>
+                            Density: 2.08 g/cm³
+                            <br>
+                            Orbital period: 1,682 days
+                        </p>
+                        <p>
+                            The Ceres mining operation, initiated by Exo-Mining Conglomerate, has reached a significant milestone in the exploration and resource extraction from the dwarf planet Ceres. Situated within the asteroid belt, Ceres has proven to be a valuable target for resource acquisition due to its unique composition.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="moon-container">
-
+            <div class="popup-bg" id="Phobos">
+                <div class="popup">
+                    <a href="javascript:void(0);" onclick="Phobos()">
+                        <i class="fa-solid fa-x"></i>
+                    </a>
+                    <div class="popup-content">
+                        <img src="./images/phobos.jpg" alt="image of Phobos"  class="popupimg">
+                        <p>
+                            <strong>
+                                Phobos
+                            </strong>
+                            <br>
+                            <br>
+                            Mars Moon
+                            <br>
+                            Radius: 11.267 km
+                            <br>
+                            Gravity: 0.0057 m/s²
+                            <br>
+                            Orbital period: 8 hours
+                        </p>
+                        <p>
+                            The Phobos mining operation, led by Exo-Mining Conglomerate, has made significant progress in the exploration and assessment of resources on Mars' moon, Phobos. This mission marks a critical step in advancing our understanding of Martian satellites and their potential for resource utilization.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="mars-container">
-
+            <div class="popup-bg" id="Deimos">
+                <div class="popup">
+                    <a href="javascript:void(0);" onclick="Deimos()">
+                        <i class="fa-solid fa-x"></i>
+                    </a>
+                    <div class="popup-content">
+                        <img src="./images/deimos.jpg" alt="image of Deimos"  class="popupimg">
+                        <p>
+                            <strong>
+                                Deimos
+                            </strong>
+                            <br>
+                            <br>
+                            Mars Moon
+                            <br>
+                            Radius: 6.2 km
+                            <br>
+                            Gravity: 0.003 m/s²
+                            <br>
+                            Orbital period: 30 hours
+                        </p>
+                        <p>
+                            The Deimos mining operation, spearheaded by Exo-Mining Conglomerate, has made significant strides in the exploration and assessment of resources on Mars' moon, Deimos. This mission represents a critical step in the quest to unlock the potential of Martian satellites for resource utilization.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="popup-bg" id="Moon">
+                <div class="popup">
+                    <a href="javascript:void(0);" onclick="Moon()">
+                        <i class="fa-solid fa-x"></i>
+                    </a>
+                    <div class="popup-content">
+                        <img src="./images/moon.jpg" alt="image of the Moon"  class="popupimg">
+                        <p>
+                            <strong>
+                                The Moon
+                            </strong>
+                            <br>
+                            <br>
+                            Radius: 1737.4 km
+                            <br>
+                            Gravity: 1.62 m/s²
+                            <br>
+                            Orbital period: 27 days
+                            <br>
+                            Distance to Earth: 384,400 km
+                        </p>
+                        <p>
+                            The Lunar mining operation, led by Exo-Mining Conglomerate, continues to make substantial progress in the exploration and extraction of resources on Earth's Moon. This mission stands as a testament to humanity's dedication to unlocking the lunar riches for scientific, economic, and future space exploration purposes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="popup-bg" id="Mars">
+                <div class="popup">
+                    <a href="javascript:void(0);" onclick="Mars()">
+                        <i class="fa-solid fa-x"></i>
+                    </a>
+                    <div class="popup-content">
+                        <img src="./images/mars.png" alt="image of Mars"  class="popupimg">
+                        <p>
+                            <strong>
+                                Mars
+                            </strong>
+                            <br>
+                            <br>
+                            Radius: 3,389.5 km
+                            <br>
+                            Gravity: 3.71 m/s²
+                            <br>
+                            Orbital period: 687 days
+                            <br>
+                            Length of day: 1d 0h 37m
+                        </p>
+                        <p>
+                            The Mars mining operation, spearheaded by Exo-Mining Conglomerate, represents a historic milestone in human space exploration. This mission is dedicated to unlocking the vast potential of the Martian surface for resources that can benefit future space missions and terrestrial industries.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="popup-bg" id="Ganymede">
+                <div class="popup">
+                    <a href="javascript:void(0);" onclick="Ganymede()">
+                        <i class="fa-solid fa-x"></i>
+                    </a>
+                    <div class="popup-content">
+                        <img src="./images/ganymede.png" alt="image of Ganymede"  class="popupimg">
+                        <p>
+                            <strong>
+                                Ganymede
+                            </strong>
+                            <br>
+                            <br>
+                            Jupiter Moon
+                            <br>
+                            Radius: 2,634.1 km
+                            <br>
+                            Gravity: 1.428 m/s²
+                            <br>
+                            Orbital period: 172 hours
+                        </p>
+                        <p>
+                            The Ganymede mining exploration mission, led by Exo-Mining Conglomerate, represents a pioneering endeavor in the field of outer solar system resource acquisition. Our mission is to unlock the potential of Ganymede, Jupiter's largest moon, and harness its unique resources for the advancement of space exploration and terrestrial industries.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="popup-bg" id="Vesta">
+                <div class="popup">
+                    <a href="javascript:void(0);" onclick="Vesta()">
+                        <i class="fa-solid fa-x"></i>
+                    </a>
+                    <div class="popup-content">
+                        <img src="./images/vesta.jpg" alt="image of 4 Vesta"  class="popupimg">
+                        <p>
+                            <strong>
+                                4 Vesta
+                            </strong>
+                            <br>
+                            <br>
+                            Raius: 262.7 km
+                            <br>
+                            Gravity: 0.22 m/s²
+                            <br>
+                            Mass: 2.589 * 10^20 kg
+                            <br>
+                            Orbital period: 1,325 days
+                        </p>
+                        <p>
+                            The Vesta Asteroid mining exploration mission, led by Exo-Mining Conglomerate, represents a pioneering endeavor in the field of asteroid resource acquisition. Our mission is to unlock the potential of 4 Vesta, a fascinating and resource-rich asteroid in the asteroid belt, for the benefit of space exploration and terrestrial industries.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="popup-bg" id="Eros">
+                <div class="popup">
+                    <a href="javascript:void(0);" onclick="Eros()">
+                        <i class="fa-solid fa-x"></i>
+                    </a>
+                    <div class="popup-content">
+                        <img src="./images/eros.jpg" alt="image of 433 Eros" class="popupimg">
+                        <p>
+                            <strong>
+                                433 Eros
+                            </strong>
+                            <br>
+                            <br>
+                            Radius: 8.42 km
+                            <br>
+                            Gravity: 0.0059 m/s²
+                            <br>
+                            Mass: 6.687 * 10^15 kg
+                            <br>
+                            Orbital period: 643 days
+                        </p>
+                        <p>
+                            The 433 Eros asteroid mining exploration mission, led by Exo-Mining Conglomerate, represents a groundbreaking endeavor in the realm of asteroid resource acquisition. Our mission is focused on unlocking the potential of 433 Eros, a near-Earth asteroid, for the advancement of space exploration and the sustainable development of space resources.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="popup-bg" id="Bennu">
+                <div class="popup">
+                    <a href="javascript:void(0);" onclick="Bennu()">
+                        <i class="fa-solid fa-x"></i>
+                    </a>
+                    <div class="popup-content">
+                        <img src="./images/bennu.jpg" alt="image of 101955 Bennu" class="popupimg">
+                        <p>
+                            <strong>
+                                101955 Bennu
+                            </strong>
+                            <br>
+                            <br>
+                            Radius: 262.5 m
+                            <br>
+                            Gravity: 0.00009807 m/s²
+                            <br>
+                            Mass: 78 billion kg
+                            <br>
+                            Orbital Period: 437 days
+                        </p>
+                        <p>
+                            The 101955 Bennu asteroid mining exploration mission, led by Exo-Mining Conglomerate, represents a pioneering endeavor in the field of asteroid resource acquisition. Our mission is dedicated to unlocking the potential of Bennu, a near-Earth asteroid, for the benefit of space exploration and the sustainable development of space resources.
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
         <footer>
