@@ -12,6 +12,7 @@ body{
     background-size: cover;
     background-attachment: fixed;
 }
+/*--------------scroll up button-------------------*/
 .scrollBTN{
   position: fixed;
   bottom: 30px;
@@ -29,6 +30,7 @@ body{
     font-size: 28px;
   }
 }
+/*---------------nav bar-----------------------*/
 @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {
       display: none;
@@ -164,14 +166,18 @@ body{
   padding-bottom: 30px;
   text-align: left;
 }
-.summary ul{
+.summary > ul{
   text-align: left;
   font-size: 20px;
   letter-spacing: 1px;
   margin: 20px auto;
   max-width: 800px;
-  & li{
-    padding-top: 10px;
+}
+.summary ul > li{
+  padding-top: 10px;
+  & .inline-tag{
+    color: var(--main-color);
+    display: inline;
   }
 }
 
@@ -211,7 +217,7 @@ body{
   background-color: var(--main-color);
   color: black;
 }
-
+/*----------------footer-----------------*/
 .footer{
   width: 100%;
   background-color: rgb(26, 26, 26);

@@ -10,7 +10,7 @@
     <script src="https://kit.fontawesome.com/9e6a36f458.js" crossorigin="anonymous"></script>
 
     <script>
-        //for a responsive nav-bar
+        //for a responsive nav-bar dropdown
         function myFunction() {
             let x = document.getElementById("myTopnav");
             if (x.className === "topnav") {
@@ -33,7 +33,7 @@
                 }
             });
         });
-
+        //functions for popup window in browse gallery
         function Ceres(){
             let z = document.getElementById("Ceres");
             if (z.className === "popup-bg") {
@@ -134,6 +134,7 @@
                         Our active mining operations:
                     </h3>
                 </div>
+                <!-- grid gallery -->
                 <div class="gallery">
                     <a href="javascript:void(0);" onclick="Ceres()">
                         <div class="galleryI">
@@ -245,6 +246,7 @@
                     </a>
                 </div>
             </div>
+            <!-- popup content -->
             <div class="popup-bg" id="Ceres">
                 <div class="popup">
                     <a href="javascript:void(0);" onclick="Ceres()">

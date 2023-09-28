@@ -10,6 +10,7 @@
     <script src="https://kit.fontawesome.com/9e6a36f458.js" crossorigin="anonymous"></script>
 
     <script>
+        //dropown menu function for responsiveness
         function myFunction() {
             var x = document.getElementById("myTopnav");
             if (x.className === "topnav") {
@@ -18,6 +19,7 @@
                 x.className = "topnav";
             }
         }
+        //waiting for DOM to load
         window.addEventListener('DOMContentLoaded', () => {
             let scrollToTopButton = document.getElementById('scrollTop');
 
@@ -35,6 +37,7 @@
 
 </head>
 <body>
+    <!-- scroll up button -->
     <a href="javascript:void(0);" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" id="scrollTop" class="scrollBTN">
         <div >
             <i class="fa-solid fa-arrow-up"></i>
